@@ -26,17 +26,18 @@ export const GlobalProvider = ({ children }) => {
     });
   }
   function addTankkaukset(tankkaukset) {
-     dispatch({
-       type: "ADD_TANKKAUKSET",
-       payload: tankkaukset,
-     });
-   }
+    dispatch({
+      type: "ADD_TANKKAUKSET",
+      payload: tankkaukset,
+    });
+  }
   return (
     <GlobalContext.Provider
-      value={{ tankkaukset: state.tankkaukset,
-           deleteTankkaukset,
-          addTankkaukset
-          }}
+      value={{
+        tankkaukset: state.tankkaukset,
+        deleteTankkaukset,
+        addTankkaukset,
+      }}
     >
       {children}
     </GlobalContext.Provider>

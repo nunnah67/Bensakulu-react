@@ -8,9 +8,10 @@ export const Transactionlist = () => {
     <>
       <h3>Kulutus Historia</h3>
       <ul className="list">
-        {tankkaukset.map(tankkaukset =>(<Transaction key={tankkaukset.id} tankkaukset={tankkaukset}/>) )}
+        {tankkaukset.map((tankkaukset) => (
+          <Transaction key={tankkaukset.id} tankkaukset={tankkaukset} />
+        ))}
       </ul>
     </>
   );
 };
- 

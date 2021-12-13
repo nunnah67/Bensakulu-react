@@ -26,7 +26,7 @@ export const Bensakoko = () => {
         <h5>Tankattu Litroja</h5>
         <p className="tankkaus+">{tankattu} L</p>
       </div>
-      
+
       <div>
         <h5>Bensan hinta/L</h5>
         <p className="litrahinta">1.70 €</p>
