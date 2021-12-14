@@ -19,7 +19,7 @@ export const AddTransaction = () => {
   };
   return (
     <div>
-      <h3>Lisää auto ja kilometrit ja tankatut litrat</h3>
+      <h3>Lisää auto, kilometrit ja tankatut litrat</h3>
       <form onSubmit={onSubmit}>
         <div className="form-control">
           <label htmlFor="text">Auto</label>
@@ -27,29 +27,29 @@ export const AddTransaction = () => {
             type="text"
             value={text}
             onChange={(e) => setText(e.target.value)}
-            placeholder="Lisää..."
+            placeholder="Lisää auto..."
           />
         </div>
         <div className="form-control">
-          <label htmlFor="amount">Kilometrit</label>
+          <label htmlFor="amount">Ajetut kilometrit</label>
           <input
             type="number"
             value={amount}
             onChange={(e) => setAmount(e.target.value)}
-            placeholder="Enter amount..."
+            placeholder="Lisää kilometrit..."
           />
         </div>
         <div className="form-control">
-          <label htmlFor="amount">Tankattu määrä</label>
+          <label htmlFor="amount">Tankattu määrä litroina.</label>
           <input
             type="number"
             value={litrat}
             onChange={(e) => setLitrat(e.target.value)}
-            placeholder="Enter amount..."
+            placeholder="Lisää tankattu määrä..."
           />
         </div>
 
-        <button className="btn">Tää on lisää nappi</button>
+        <button className="btn">Paina tästä</button>
       </form>
     </div>
   );
