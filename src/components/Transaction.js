@@ -9,13 +9,9 @@ export const Transaction = ({ tankkaukset }) => {
       <span>
         {sign}
         {Math.abs(tankkaukset.amount)} Km
-        {'  '}
-        
-        {Math.abs(tankkaukset.litrat)} L
-         {' '}
-        {"1.70"}€
+        {"  "}
+        {Math.abs(tankkaukset.litrat)} L {"1.70"}€
       </span>
-      
       <button
         onClick={() => deleteTankkaukset(tankkaukset.id)}
         className="delete-btn"
