@@ -5,10 +5,10 @@ import AppReducer from "./AppReducer";
 
 const initialState = {
   tankkaukset: [
-    { id: 1, text: "opel", amount: 20, litrat: 2000 },
-    { id: 2, text: "Rellu", amount: 300, litrat: 24 },
+    { id: 1, text: "opel", amount: 20, litrat: 20 },
+    { id: 2, text: "Rellu", amount: 30, litrat: 24 },
     { id: 3, text: "Citroen", amount: 10, litrat: 20 },
-    { id: 4, text: "Ford", amount: 150, litrat: 234 },
+    { id: 4, text: "Ford", amount: 150, litrat: 23 },
   ],
 };
 // Createcontext
